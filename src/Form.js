@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import AnimatedNumber from 'animated-number-react';
 
 export default function Input(){
 
@@ -37,7 +38,15 @@ export default function Input(){
     <>
       <input name="input" type="text" onChange={onChange}/>
       <br/><br/>
-      <input name="output" type="number" value={dec}/>
+      <AnimatedNumber 
+      value={dec}
+      style={{ fontSize: 200 }}
+      duration={1000}
+      formatValue={v => v.toFixed(0)}
+      frameStyle={perc => (
+        { opacity: perc / 100 }
+      )}
+      />
     </>
   );
 }

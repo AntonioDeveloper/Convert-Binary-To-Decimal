@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
     <h1>Convert Binary To Decimal!!</h1>
-    <Inputs />
+    <Inputs />    
     </div>
   );
 }
