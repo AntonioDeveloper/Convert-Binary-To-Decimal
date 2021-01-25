@@ -38,9 +38,8 @@ export default function Input(){
     <>
       <input name="input" type="text" onChange={onChange}/>
       <br/><br/>
-      <AnimatedNumber 
-      value={dec}
-      style={{ fontSize: 200 }}
+      <AnimatedNumber className="numbers" 
+      value={dec}      
       duration={1000}
       formatValue={v => v.toFixed(0)}
       frameStyle={perc => (
