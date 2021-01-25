@@ -4,8 +4,10 @@ import Inputs from "./Form";
 function App() {
   return (
     <div className="App">
-    <h1>Convert Binary To Decimal!!</h1>
-    <Inputs />    
+        <h1>Convert Binary To Decimal!!</h1>
+      <div> 
+        <Inputs /> 
+      </div>   
     </div>
   );
 }

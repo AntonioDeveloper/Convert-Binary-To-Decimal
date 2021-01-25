@@ -1,5 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .App {
   text-align: center;
+  background-image: linear-gradient(50deg, #c21500, #ffc500);
+  height: 100vh;
+  color: #fff;
+}
+
+.App div {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 20vh auto;
+  position: relative;
+}
+
+.App h1 {
+  padding-top: 5vh;
+  font-size: 60px;
 }
 
 .App-logo {
@@ -39,4 +61,13 @@
 
 .numbers {
   font-size: 200px;
+}
+
+input[type='text'] {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  font-size: 40px;
+  text-align: center;
 }
